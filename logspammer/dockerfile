@@ -1,0 +1,8 @@
+FROM alpine
+
+COPY  lotr.sh /lotr.sh
+RUN chmod 776 /lotr.sh
+
+RUN apk add --no-cache bash
+
+ENTRYPOINT [ "/bin/bash", "/lotr.sh"]

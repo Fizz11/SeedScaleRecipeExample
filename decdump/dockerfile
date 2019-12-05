@@ -1,0 +1,11 @@
+FROM alpine:3.9
+RUN apk -U add python
+
+COPY ./decdump.py /app/
+COPY ./dumpcode.py /app/
+
+WORKDIR /app/
+
+ENTRYPOINT [ "python", "decdump.py" ]
+
+CMD []

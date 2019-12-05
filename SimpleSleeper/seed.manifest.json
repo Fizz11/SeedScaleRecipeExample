@@ -1,0 +1,39 @@
+{
+  "seedVersion": "1.0.0",
+  "job": {
+    "name": "simplesleeper",
+    "jobVersion": "1.0.0",
+    "packageVersion": "1.0.0",
+    "title": "Simple Sleeper",
+    "description": "Logs its filename and sleeps for 5 seconds",
+    "maintainer": {
+      "name": "AIS",
+      "organization": "Applied Information Sciences",
+      "email": "n/a"
+    },
+    "timeout": 3600,
+    "interface": {
+      "command": "",
+      "inputs": {
+        "files": [
+          {
+            "name": "INPUT_FILE",
+            "required": true
+          }
+        ]
+      }
+    },
+    "resources": {
+      "scalar": [
+        {
+          "name": "cpus",
+          "value": 0.1
+        },
+        {
+          "name": "mem",
+          "value": 32
+        }
+      ]
+    }
+  }
+}

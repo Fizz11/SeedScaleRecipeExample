@@ -1,0 +1,6 @@
+FROM alpine
+
+COPY  maybeoutput.sh /maybeoutput.sh
+RUN chmod 776 /maybeoutput.sh
+
+ENTRYPOINT [ "sh", "/maybeoutput.sh"]

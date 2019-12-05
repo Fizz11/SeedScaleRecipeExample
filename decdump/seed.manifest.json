@@ -1,0 +1,58 @@
+{
+  "seedVersion": "1.0.0",
+  "job": {
+    "name": "decdump",
+    "jobVersion": "1.0.1",
+    "packageVersion": "1.0.0",
+    "title": "Decimal Dumper",
+    "description": "Reads a file and dumps the first 128 bytes to an output file in decimal/printable ASCII format.",
+    "tags": [
+      "demonstration"
+    ],
+    "maintainer": {
+      "name": "C. Shamis",
+      "organization": "NGA/R",
+      "email": "n/a"
+    },
+    "timeout": 300,
+    "interface": {
+      "command": "${INPUT_FILE} ${OUTPUT_DIR}",
+      "inputs": {
+        "files": [
+          {
+            "name": "INPUT_FILE",
+            "required": true,
+            "mediaTypes": [
+              ""
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "files": [
+          {
+            "name": "OUTPUT_FILE",
+            "mediaType": "text/plain",
+            "pattern": "*.*log"
+          }
+        ]
+      }
+    },
+    "resources": {
+      "scalar": [
+        {
+          "name": "cpus",
+          "value": 0.25
+        },
+        {
+          "name": "mem",
+          "value": 32
+        },
+        {
+          "name": "disk",
+          "value": 128
+        }
+      ]
+    }
+  }
+}

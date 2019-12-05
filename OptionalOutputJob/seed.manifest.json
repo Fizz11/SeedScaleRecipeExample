@@ -1,0 +1,49 @@
+{
+  "seedVersion": "1.0.0",
+  "job": {
+    "name": "maybeoutput",
+    "jobVersion": "1.0.0",
+    "packageVersion": "1.0.0",
+    "title": "Maybe Output",
+    "description": "has one optional output",
+    "tags": [],
+    "maintainer": {
+      "name": "Raul Alvarado",
+      "organization": "AIS",
+      "email": "raul.alvarado@appliedis.com"
+    },
+    "timeout": 3600,
+    "interface": {
+      "command": "",
+      "inputs": {
+      },
+      "outputs": {
+        "files": [
+          {
+            "name": "output_file",
+            "mediaType": "plain/text",
+            "multiple": false,
+            "pattern": "*.tmp",
+            "required": false
+          }
+        ]
+      }
+    },
+    "resources": {
+      "scalar": [
+        {
+          "name": "cpus",
+          "value": 1
+        },
+        {
+          "name": "mem",
+          "value": 1024
+        },
+        {
+          "name": "sharedMem",
+          "value": 1024
+        }
+      ]
+    }
+  }
+}
