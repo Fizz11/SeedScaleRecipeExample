@@ -1,0 +1,40 @@
+{
+  "seedVersion": "1.0.0",
+  "job": {
+    "name": "jsoninput",
+    "jobVersion": "1.0.0",
+    "packageVersion": "1.0.0",
+    "title": "JSON Input Sample",
+    "description": "Sample job that takes a json input",
+    "maintainer": {
+      "name": "Raul",
+      "organization": "Applied Information Sciences",
+      "email": "n/a"
+    },
+    "timeout": 3600,
+    "interface": {
+      "command": "",
+      "inputs": {
+        "json": [
+          {
+            "name": "INPUT_JSON",
+            "type": "string",
+            "required": true
+          }
+        ]
+      }
+    },
+    "resources": {
+      "scalar": [
+        {
+          "name": "cpus",
+          "value": 0.1
+        },
+        {
+          "name": "mem",
+          "value": 32
+        }
+      ]
+    }
+  }
+}

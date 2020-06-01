@@ -1,0 +1,57 @@
+{
+  "seedVersion": "1.0.0",
+  "job": {
+    "name": "sampleparser",
+    "jobVersion": "1.0.2",
+    "packageVersion": "1.0.0",
+    "title": "Sample Parser",
+    "description": "Adds metadata to an ingested file",
+    "tags": [
+      "demonstration"
+    ],
+    "maintainer": {
+      "name": "AIS. D. Veloper",
+      "organization": "AIS",
+      "email": "n/a"
+    },
+    "timeout": 300,
+    "interface": {
+      "command": "${INPUT_FILE} ${OUTPUT_DIR}",
+      "inputs": {
+        "files": [
+          {
+            "name": "INPUT_FILE",
+            "required": true
+          }
+        ]
+      },
+      "outputs": {
+        "files": [
+          {
+            "name": "OUTPUT_LOG", 
+            "mediaType": "text/json", 
+            "pattern": "*.log", 
+            "multiple": false, 
+            "required": true 
+          }
+        ]
+      }
+    },
+    "resources": {
+      "scalar": [
+        {
+          "name": "cpus",
+          "value": 0.25
+        },
+        {
+          "name": "mem",
+          "value": 32
+        },
+        {
+          "name": "disk",
+          "value": 128
+        }
+      ]
+    }
+  }
+}

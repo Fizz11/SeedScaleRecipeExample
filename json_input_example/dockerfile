@@ -1,0 +1,6 @@
+FROM alpine
+
+COPY  sleep.sh /sleep.sh
+RUN chmod 776 /sleep.sh
+
+ENTRYPOINT [ "sh", "/sleep.sh"]
