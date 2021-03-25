@@ -1,0 +1,24 @@
+{
+  "seedVersion": "1.0.0",
+  "job": {
+    "name": "kirbydance2",
+    "jobVersion": "1.0.0",
+    "packageVersion": "1.0.0",
+    "title": "Kirby Dance with interface",
+    "description": "make kirby dance for your amusement",
+    "tags": [
+      "fun",
+      "silly",
+      "kirby",
+      "nintendo"
+    ],
+    "interface": {
+  },
+    "maintainer": {
+      "name": "Raul Alvarado",
+      "organization": "AIS",
+      "email": "raul.alvarado@appliedis.com"
+    },
+    "timeout": 3600
+  }
+}
