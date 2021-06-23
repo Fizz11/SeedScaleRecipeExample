@@ -1,11 +1,11 @@
 {
   "seedVersion": "1.0.0",
   "job": {
-    "name": "kirbydance2",
+    "name": "kirbydanceresource",
     "jobVersion": "1.0.0",
     "packageVersion": "1.0.0",
     "title": "Kirby Dance with interface",
-    "description": "make kirby dance for your amusement",
+    "description": "make kirby dance for your amusement WITH RESOURCES",
     "tags": [
       "fun",
       "silly",
@@ -13,9 +13,37 @@
       "nintendo"
     ],
     "interface": {
+      "command": "",
+      "inputs": {
+        "files": [
+          {
+            "name": "MY_INPUT_FILE",
+            "required": true,
+            "mediaTypes": [
+              ""
+            ]
+          }
+        ]
+      }
   },
+    "resources": {
+      "scalar": [
+        {
+          "name": "cpus",
+          "value": 1
+        },
+        {
+          "name": "mem",
+          "value": 128
+        },
+        {
+          "name": "disk",
+          "value": 128
+        }
+      ]
+    },
     "maintainer": {
-      "name": "Raul Alvarado",
+      "name": "ra",
       "organization": "AIS",
       "email": "raul.alvarado@appliedis.com"
     },
